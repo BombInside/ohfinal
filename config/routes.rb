@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'core/index'
+  root 'core#index'
+
   resources :posts do
   #->Prelang (voting/acts_as_votable)
   member do
