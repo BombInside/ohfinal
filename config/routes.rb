@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :profiles
+
   resources :categories
 
   devise_for :admin_users, ActiveAdmin::Devise.config
