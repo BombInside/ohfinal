@@ -40,6 +40,8 @@ gem 'spring',        group: :development
 
 gem 'bundler'
 gem 'rails_12factor'
+gem 'unicorn'
+
 gem 'acts_as_votable', github: 'ryanto/acts_as_votable'
 gem 'devise', github: 'plataformatec/devise'
 gem 'omniauth'
