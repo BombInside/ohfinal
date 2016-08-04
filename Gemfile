@@ -39,7 +39,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'bundler'
-
+gem 'rails_12factor'
 gem 'acts_as_votable', github: 'ryanto/acts_as_votable'
 gem 'devise', github: 'plataformatec/devise'
 gem 'omniauth'
@@ -50,6 +50,7 @@ gem 'delayed_job_active_record'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'validates_formatting_of'
 gem 'tzinfo-data'
+
 
 group :development do
   gem 'better_errors'
