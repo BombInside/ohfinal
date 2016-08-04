@@ -26,7 +26,7 @@ body:after {
   clear: both;
 }
 a, a:visited, a:active {
- color:#13c4a5;
+ color: #8dd2dc;
 }
 a:hover { color:#777;}
 html{
@@ -112,10 +112,10 @@ nav .logo {
   float: left;
 }
 nav .logo a{
-  width: 136px;
+  width: 120px;
   height: 36px;
-  background: url(../img/logo.png);
-  background-size: 136px 36px;
+  background: url(../img/logo.png) no-repeat;
+  background-size: 120px 36px;
   display: block;
 }
 nav .logo a img{
@@ -146,11 +146,11 @@ nav ul li a {
   font-weight:normal;
 }
 nav ul li a:hover {
-  background-color: #13c4a5;
+  background-color: #8dd2dc;
   color: #fff;
 }
 nav ul li a:active {
-  background-color: #eb5946;
+  background-color: #e84b68;
   color: #323232;
 }
 #top nav .menu-btn {
@@ -158,7 +158,7 @@ nav ul li a:active {
 }
 header {
   text-align: center;
- background-color: #13c4a5;
+ background-color: #8dd2dc;
   margin-top: 80px;
 	
  background-position: center top;
@@ -1499,7 +1499,7 @@ header .content ul li {
 {
 width: 10px!important;
 height: 127px!important;
-background-color: #ec7063!important;
+background-color: #8dd2dc!important;
 border:0px!important;
 border-radius:0px!important;
 -webkit-border-radius:0px!important;
