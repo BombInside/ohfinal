@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :news
+
   mount Ckeditor::Engine => '/ckeditor'
   get 'core/index'
   root 'core#index'

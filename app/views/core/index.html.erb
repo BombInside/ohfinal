@@ -94,12 +94,13 @@
 		<div class="line"></div>
 	</div>
 	<div class="grid3">
+	<% @news.each do |n| %>
 		<article class="col">
 			<figure><img src="img/free-html5-responsive-template.jpg" alt="free-html5-responsive-template"></figure>
-			<h3>Заголовок</h3>
-			<p>Created by using the latest HTML5 and CSS3 techniques, Brownie is a simple and clean Free Responsive HTML5 portfolio and business website template.</p>
+			<h3><%= n.title %></h3>
+			<p><%= truncate(n.desc.html_safe, length: 120) %></p>
 		</article>
-		
+		<%end%>
 		
 	</div>
     <div class="clear"></div>
