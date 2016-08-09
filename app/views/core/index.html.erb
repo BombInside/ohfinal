@@ -1,2 +1,143 @@
-<h1>Core#index</h1>
-<p>Find me in app/views/core/index.html.erb</p>
+<header>
+	<div class="wrapper">
+		<div class="content">
+			<hgroup>
+			<% @posts.each do |p| %>
+				<h1><%= p.alt_title %></h1>
+				<h2><%= truncate(p.description.to_s, length: 267) %></h2>
+				
+			</hgroup>		
+			<div class="clear"></div>		
+		<div class="read-on">	<%= link_to "Детально", id: "modal-trigger-#{p.id}", data: {type: "cd-modal-trigger"}, class: "btn btn-large btn-block btn-inverse" do %>	
+		Детально
+<%end%>
+				<a href="#contact" class="btn btn-large btn-block btn-danger">Звязок</a></div>
+				<% end %>
+
+				<% @posts.each do |p| %>
+	<div class="cd-modal" data-modal="modal-trigger-<%=p.id %>">
+        <div class="cd-svg-bg" 
+        data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z" 
+        data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z" 
+        data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z" 
+        data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z" 
+        data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z" 
+        data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
+            <svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
+                <title>SVG Modal background</title>
+                <path id="cd-changing-path-<%=p.id+1*25 %>" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
+                <path id="cd-changing-path-<%=p.id+2*33 %>" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
+                <path id="cd-changing-path-<%=p.id+3*48 %>" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
+            </svg>
+        </div>
+
+        <div class="cd-modal-content">
+            <p>
+                <%= p.title %>
+            </p>
+
+            
+                <%= p.body.html_safe %>
+            
+        </div> <!-- cd-modal-content -->
+
+        <a href="#0" class="modal-close">Close</a>
+    </div> 
+    <% end %>
+			<div class="clear"></div>
+		</div>
+	</div>
+</header>
+
+<a class="scroll-point" id="about"></a>
+
+<div  class="sectiongrey">
+<section>
+	<div class="separator"> 
+		<div class="line"></div>
+		<h2>Про нас</h2>
+		<div class="line"></div>
+	</div>
+    <div class="grid3">
+		<p>
+      Текст
+</p>	
+
+
+<p>Текст</a>.</p>
+
+
+
+</div>
+<div class="grid3">
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- On Demos -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-6472538845369616"
+     data-ad-slot="4764157394"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</section>
+</div>
+
+<a class="scroll-point" id="freebies"></a>
+<div class="clear"></div>
+
+<div class="sectionteal">
+<section>
+	<div class="separator"> 
+		<div class="line"></div>
+		<h2>Новини</h2>
+		<div class="line"></div>
+	</div>
+	<div class="grid3">
+	<% @news.each do |n| %>
+		<article class="col">
+			<figure><img src="img/free-html5-responsive-template.jpg" alt="free-html5-responsive-template"></figure>
+			<h3><%= n.title %></h3>
+			<p><%= truncate(n.desc.html_safe, length: 120) %></p>
+		</article>
+		<%end%>
+		
+	</div>
+    <div class="clear"></div>
+    <div class="grid3">
+
+	</div>
+</section>
+</div>
+<a class="scroll-point" id="clients"></a>
+<div class="clear"></div>
+
+<div class="sectiongrey">
+<section>
+	<div class="separator"> 
+		<div class="line"></div>
+		<h2>партнери</h2>
+		<div class="line"></div>
+	</div>
+	<div class="clear"></div>
+	<h3 class="sectionh3">Партнери які співрацюють з нами. <br/> Але ми відкриті для нових партнерів і проектів.</h3>
+	<div id="slide-wrapper">
+		<ul class="testimonials">
+			<li class="col"><figure><img src="img/clients/computerhistory.png" alt=""></figure></li>
+			<li class="col"><figure><img src="img/clients/discoverychannel.png" alt=""></figure></li>
+			<li class="col"><figure><img src="img/clients/dockers.png" alt=""></figure></li>
+			<li class="col"><figure><img src="img/clients/firefox.png" alt=""></figure></li>
+			<li class="col"><figure><img src="img/clients/google.png" alt=""></figure></li>
+			<li class="col"><figure><img src="img/clients/levis.png" alt=""></figure></li>
+			<li class="col"><figure><img src="img/clients/seagate.png" alt=""></figure></li>
+			<li class="col"><figure><img src="img/clients/wynn.png" alt=""></figure></li>
+			<li class="col"><figure><img src="img/clients/zipcar.png" alt=""></figure></li>
+			
+		</ul>
+	</div>
+	<div class="pagination" id="foo2_pag"></div>
+</section>
+</div>
+
+<a class="scroll-point" id="contact"></a>
+<div class="clear"></div>
