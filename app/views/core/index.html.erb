@@ -1,2 +1,132 @@
-<h1>Core#index</h1>
-<p>Find me in app/views/core/index.html.erb</p>
+<header>
+	<div class="wrapper">
+		<div class="content">
+			<hgroup>
+			<% @posts.each do |p| %>
+				<h1><%= p.alt_title %></h1>
+				<h2><%= truncate(p.description.to_s, length: 267) %></h2>
+				<% end %>
+			</hgroup>		
+			<div class="clear"></div>				
+				<div class="read-on"><a href="#about" class="btn btn-large btn-block btn-inverse">Детально</a>
+				<a href="#contact" class="btn btn-large btn-block btn-danger">Звязок</a></div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</header>
+
+<a class="scroll-point" id="about"></a>
+
+<div  class="sectiongrey">
+<section>
+	<div class="separator"> 
+		<div class="line"></div>
+		<h2>Про нас</h2>
+		<div class="line"></div>
+	</div>
+    <div class="grid3">
+		<p>
+Тут будет информация "О НАС".</p>
+
+
+
+</div>
+<div class="grid3">
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- On Demos -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-6472538845369616"
+     data-ad-slot="4764157394"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</section>
+</div>
+
+<a class="scroll-point" id="freebies"></a>
+<div class="clear"></div>
+
+<div class="sectionteal">
+<section>
+	<div class="separator"> 
+		<div class="line"></div>
+		<h2>Freebies</h2>
+		<div class="line"></div>
+	</div>
+	<div class="grid3">
+		<article class="col">
+			<figure><img src="img/free-html5-responsive-template.jpg" alt="free-html5-responsive-template"></figure>
+			<h3><a href="">Responsive<br/>HTML5 Template</a></h3>
+			<p>Created by using the latest HTML5 and CSS3 techniques, Brownie is a simple and clean Free Responsive HTML5 portfolio and business website template.
+
+</p>
+					</article>
+		<article class="col">
+			<figure><img src="img/free-admin-template-psd.jpg" alt="free-admin-template-psd"></figure>
+			<h3>Заголовок</h3>
+			<p>AppAmdin is a The PSD is well organized in layers and easily customizable to your needs.
+
+</p>
+		</article>
+		<article class="col">
+			<figure><img src="img/free-professional-html5-cv-resume-template.jpg" alt="free-professional-html5-cv-resume-template"></figure>
+			<h3><a href="">HTML5 Resume<br/>Template</a></h3>
+			<p>Its a free, professional print-ready HTML5 CV/Resume Template with 13 creative themes suitable for every profession.
+
+</p>
+					</article>
+	</div>
+    <div class="clear"></div>
+    <div class="grid3">
+		<article class="col">
+			<figure><img src="img/jquery-image-slider-plugin-with-cool-transition-effects.jpg" alt="jquery-image-slider-plugin-with-cool-transition-effects"></figure>
+			<h3><a href="">jQuery Image<br/>Slider Plugin</a></h3>
+			<p>Open Source jQuery Image / Content Slider Plugin, with support for CSS themes and 40+ cool transition effects.</p>
+					</article>
+		<article class="col">
+			<figure><img src="img/responsive-multi-level-dropdown-menu-wordpress-plugin.jpg" alt="responsive-multi-level-dropdown-menu-wordpress-plugin"></figure>
+			<h3><a href="">Menu Plugin</a></h3>
+			<p>WPBootM is a responsive multi level dropdown menu plugin for WordPress, based on famous twitter bootstrap framework.</p>
+					</article>
+		<article class="col">
+			<figure><img src="img/free-wordpress-resume-theme-elegant-resume.jpg" alt="free-wordpress-resume-theme-elegant-resume"></figure>
+			<h3>Заголовок</h3>
+			<p>We solve problems focusing on the user through tests, metrics and accessibility techniques.</p>
+					</article>
+	</div>
+</section>
+</div>
+<a class="scroll-point" id="clients"></a>
+<div class="clear"></div>
+
+<div class="sectiongrey">
+<section>
+	<div class="separator"> 
+		<div class="line"></div>
+		<h2>Clients</h2>
+		<div class="line"></div>
+	</div>
+	<div class="clear"></div>
+	<h3 class="sectionh3">Brands we've worked with. <br/> We get to work with some of the best brands in the world.</h3>
+	<div id="slide-wrapper">
+		<ul class="testimonials">
+			<li class="col"><figure><img src="img/clients/computerhistory.png" alt=""></figure></li>
+			<li class="col"><figure><img src="img/clients/discoverychannel.png" alt=""></figure></li>
+			<li class="col"><figure><img src="img/clients/dockers.png" alt=""></figure></li>
+			<li class="col"><figure><img src="img/clients/firefox.png" alt=""></figure></li>
+			<li class="col"><figure><img src="img/clients/google.png" alt=""></figure></li>
+			<li class="col"><figure><img src="img/clients/levis.png" alt=""></figure></li>
+			<li class="col"><figure><img src="img/clients/seagate.png" alt=""></figure></li>
+			<li class="col"><figure><img src="img/clients/wynn.png" alt=""></figure></li>
+			<li class="col"><figure><img src="img/clients/zipcar.png" alt=""></figure></li>
+			
+		</ul>
+	</div>
+	<div class="pagination" id="foo2_pag"></div>
+</section>
+</div>
+
+<a class="scroll-point" id="contact"></a>
+<div class="clear"></div>

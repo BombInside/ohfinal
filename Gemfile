@@ -48,6 +48,7 @@ gem 'active_bootstrap_skin'
 gem 'active_admin-extensions'
 gem 'ckeditor'
 gem 'paperclip'
+gem 'underscore-rails'
 
 
 gem 'acts_as_votable', github: 'ryanto/acts_as_votable'
