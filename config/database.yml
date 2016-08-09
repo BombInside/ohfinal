@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: ohfinal_production
-  username: ohfinal
+  username: bomb
   password: <%= ENV['OHFINAL_DATABASE_PASSWORD'] %>
